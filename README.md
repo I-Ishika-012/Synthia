@@ -17,4 +17,7 @@ npm i openai
 ```
 npm i dotenv
 ```
+```
+node --watch app.js
+```
 
