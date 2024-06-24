@@ -6,3 +6,11 @@ MERN + OpenAI Chatbot
 ```
 npm init --yes
 ```
+
+```
+npm i express
+```
+
+```
+npm i openai
+```
