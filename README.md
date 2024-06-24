@@ -23,3 +23,9 @@ node --watch app.js
 ```
 npm create vite@latest
 ```
+```
+ npm install
+```
+```
+npm run dev
+```
