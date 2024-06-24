@@ -14,3 +14,7 @@ npm i express
 ```
 npm i openai
 ```
+```
+npm i dotenv
+```
+
