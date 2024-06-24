@@ -1,0 +1,2 @@
+# Synthia
+MERN + OpenAI Chatbot 
