@@ -29,3 +29,6 @@ npm create vite@latest
 ```
 npm run dev
 ```
+```
+npm i @tanstack/react-query
+```
