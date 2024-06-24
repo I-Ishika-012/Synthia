@@ -20,4 +20,6 @@ npm i dotenv
 ```
 node --watch app.js
 ```
-
+```
+npm create vite@latest
+```
