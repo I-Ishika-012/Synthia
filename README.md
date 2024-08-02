@@ -37,6 +37,7 @@ npm i @tanstack/react-query
 ```
 <br>
 HTTP Client~
+<br>
 (Promise based HTTP client for the browser and node.js)
 
 ```
