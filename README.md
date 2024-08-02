@@ -1,6 +1,8 @@
 # Synthia
 MERN + OpenAI Chatbot 
 
+W.I.P.
+
 ### Installing Default Setup/ Configurations/ Dependencies~
 
 Initializing Node Project~
