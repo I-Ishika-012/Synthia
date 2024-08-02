@@ -1,6 +1,7 @@
 import { useMutation } from '@tanstack/react-query'
 import React from 'react'
 import axios from 'axios'
+import {getImageUrl} from '../utils'
 
 //function to send message
 const sendMsgAPI = async (msg) => {
@@ -39,7 +40,21 @@ const Chat = () => {
   return (
     <>
         <div className="header">
+        <img src={getImageUrl("/frontend/public/synthia.png")} alt="Synthia" />
             <h1 className="title">AI Chatbot</h1>
+            <p className="description">Enter your message in the input below to chat with the Synthia AI.</p>
+            <div className="data-container">
+                <div className="conversation">
+                    {conversation.map((entry, index) => (
+                        <div className={`message ${entry.role}`} key={index}>
+                            <strong>{entry.role === 'user' ? 'You: ' : 'Synthia: '}
+                                {entry.content}
+                            </strong>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
         </div>
     </>
   )
