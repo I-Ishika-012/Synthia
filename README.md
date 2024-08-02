@@ -35,6 +35,10 @@ npm run dev
 ```
 npm i @tanstack/react-query
 ```
+<br>
+HTTP Client~
+(Promise based HTTP client for the browser and node.js)
+
 ```
 npm i axios
 ```
