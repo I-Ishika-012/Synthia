@@ -10,10 +10,12 @@ Initializing Node Project~
 npm init --yes
 ```
 <br>
+
 ```
 npm i express
 ```
 <br>
+
 ```
 npm i openai
 ```
