@@ -17,7 +17,7 @@ const Chat = () => {
     //useMutation hook to send message
     const mutation = useMutation({
         mutationFn: sendMsgAPI, 
-        mutationKey: 'chatbot',
+        mutationKey: ['chatbot'],
         onSuccess: (data) => {
             setConversation((prevConversation) => [...prevConversation, {role: 'assistant', content: data.message}])
             setMessage('')
