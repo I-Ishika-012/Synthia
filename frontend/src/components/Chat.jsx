@@ -49,7 +49,7 @@ const Chat = () => {
             <img src={Synthia} alt="Synthia" width={400} />
             <h1 className="title">AI Chatbot</h1>
             <p className="description">Enter your message in the input below to chat with the Synthia AI.</p>
-            <div className="data-container">
+            <div className="chat-container">
                 <div className="conversation">
                     {conversation.map((entry, index) => (
                         <div className={`message ${entry.role}`} key={index}>
