@@ -45,3 +45,11 @@ Axios HTTP Client~
 ```
 npm i axios
 ```
+<br>
+Cors Middleware~
+<br>
+Provides a Connect/Express middleware that can be used to enable CORS with various options.
+
+```
+npm i cors
+```
