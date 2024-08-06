@@ -53,3 +53,5 @@ Provides a Connect/Express middleware that can be used to enable CORS with vario
 ```
 npm i cors
 ```
+
+### Authors Note: Some of the above packages might not be available in the package.json file but you can always install them yourself separately :)
