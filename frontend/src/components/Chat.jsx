@@ -65,6 +65,10 @@ const Chat = () => {
                         </div>
                     )}
                 </div>
+                <div className="input-area">
+                    <input type="text" placeholder="Enter message here" value={message} onChange={(e) => setMessage(e.target.value)} />
+                    <button onClick={handleSubmitMsg}>Send</button>
+                </div>
             </div>
 
         </div>
