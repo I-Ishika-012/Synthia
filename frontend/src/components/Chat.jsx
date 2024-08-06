@@ -58,6 +58,12 @@ const Chat = () => {
                             {entry.content}
                         </div>
                     ))}
+                    {isTyping && (
+                        <div className="message assistant">
+                            <h1>Synthia</h1>
+                            <strong>Synthia is typing...</strong>
+                        </div>
+                    )}
                 </div>
             </div>
 
