@@ -54,8 +54,8 @@ const Chat = () => {
                     {conversation.map((entry, index) => (
                         <div className={`message ${entry.role}`} key={index}>
                             <strong>{entry.role === 'user' ? 'You: ' : 'Synthia: '}
-                                {entry.content}
                             </strong>
+                            {entry.content}
                         </div>
                     ))}
                 </div>
