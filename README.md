@@ -19,10 +19,15 @@ Fast, unopinionated, minimalist web framework for Node.js.
 npm i express
 ```
 <br>
+Installing OpenAI API Library~
+Provides convenient access to the OpenAI REST API from TypeScript or JavaScript
+<br>
 
 ```
 npm i openai
 ```
+<br>
+
 ```
 npm i dotenv
 ```
