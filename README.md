@@ -10,6 +10,9 @@ Initializing Node Project~
 npm init --yes
 ```
 <br>
+Installing Express~
+Fast, unopinionated, minimalist web framework for Node.js.
+<br>
 
 ```
 npm i express
