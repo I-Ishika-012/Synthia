@@ -28,6 +28,9 @@ Provides convenient access to the OpenAI REST API from TypeScript or JavaScript
 npm i openai
 ```
 <br>
+Dotenv Environment Variable Manager~
+
+Zero-dependency module that loads environment variables from a .env file into process.env
 
 ```
 npm i dotenv
