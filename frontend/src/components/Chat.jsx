@@ -1,46 +1,52 @@
 import { useMutation } from '@tanstack/react-query'
-import React from 'react'
+import React, { useState } from 'react'
 import axios from 'axios'
-import {getImageUrl} from '../utils'
+import "./Chatbot.css"
+import Synthia from "../assets/synthia.png"
+// import {getImageUrl} from '../utils'
+
 
 //function to send message
 const sendMsgAPI = async (msg) => {
-    const res = await axios.post('http://localhost:9090/ask', msg)
+    const res = await axios.post('http://localhost:9090/ask',{ msg})
     return res.data
 }
 
 
 const Chat = () => {
-    const [message, setMessage] = useState('')
-    const [isTyping, setIsTyping] = useState(false)
-    const [conversation, setConversation] = useState([{role: 'assistant', content: 'Hello, how can I help you today?'}])
+    const [message, setMessage] = useState('');
+    const [isTyping, setIsTyping] = useState(false);
+    const [conversation, setConversation] = useState([{role: 'assistant', content: 'Hello, how can I help you today?',},]);
 
     //useMutation hook to send message
     const mutation = useMutation({
-        mutationFn: sendMsgAPI, 
+        mutationFn: sendMsgAPI,
         mutationKey: ['chatbot'],
         onSuccess: (data) => {
-            setConversation((prevConversation) => [...prevConversation, {role: 'assistant', content: data.message}])
-            setMessage('')
-            setIsTyping(false)
-        }
-    })
+          setIsAITyping(false); // Stop showing AI typing when response arrives
+          setConversation((prevConversation) => [
+            ...prevConversation,
+            { role: "assistant", content: data.message },
+          ]);
+        },
+      });
 
     //handle submit
     const handleSubmitMsg = (e) => {
         e.preventDefault()
         const currentMsg = message.trim()
-        if(!currentMsg) {alert('Please enter a message'); return}
-        setConversation((prevConversation) => [...prevConversation, {role: 'user', content: currentMsg}])
-        setIsTyping(true)
-        setMessage('')
-        mutation.mutate({message: currentMsg})
+        if(!currentMsg) {alert('Please enter a message'); return;}
+        setConversation((prevConversation) => [...prevConversation, {role: 'user', content: currentMsg}]);
+        setIsTyping(true);
+        mutation.mutate({message: currentMsg});
+        setMessage('');
+        
     }
 
   return (
     <>
         <div className="header">
-        <img src={getImageUrl("/frontend/public/synthia.png")} alt="Synthia" />
+            <img src={Synthia} alt="Synthia" width={400} />
             <h1 className="title">AI Chatbot</h1>
             <p className="description">Enter your message in the input below to chat with the Synthia AI.</p>
             <div className="data-container">
@@ -60,4 +66,4 @@ const Chat = () => {
   )
 }
 
-export default Chat
+export default Chat;
