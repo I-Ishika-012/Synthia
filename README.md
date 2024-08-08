@@ -11,7 +11,7 @@ npm init --yes
 ```
 <br>
 Installing Express~
-<br>
+
 Fast, unopinionated, minimalist web framework for Node.js.
 <br>
 
@@ -56,7 +56,7 @@ npm i @tanstack/react-query
 ```
 <br>
 Axios HTTP Client~
-<br>
+
 (Promise based HTTP client for the browser and node.js)
 
 ```
@@ -64,13 +64,13 @@ npm i axios
 ```
 <br>
 Cors Middleware~
-<br>
+
 Provides a Connect/Express middleware that can be used to enable CORS with various options.
 
 ```
 npm i cors
 ```
-
+<br>
 React Icons~
 
 Include popular icons in your React projects easily, utilizes ES6 imports that allows you to include only the icons that your project is using.
