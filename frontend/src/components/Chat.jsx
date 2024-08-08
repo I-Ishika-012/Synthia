@@ -67,7 +67,7 @@ const Chat = () => {
                 </div>
                 <div className="input-area">
                     <input type="text" placeholder="Enter message here" value={message} onChange={(e) => setMessage(e.target.value)} />
-                    <button onClick={handleSubmitMsg}>Send</button>
+                    <button onClick={handleSubmitMsg}>{mutation.isPending ? 'Loading...' : 'Send'}</button>
                 </div>
             </div>
 
