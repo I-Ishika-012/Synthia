@@ -69,4 +69,4 @@ npm i cors
 
 ### Authors Note: Some of the above packages might not be available in the package.json file but you can always install them yourself separately :)
 
-[Synthia](https://github.com/I-Ishika-012/Synthia/blob/main/synthia-demo.png)
+<img src="https://github.com/I-Ishika-012/Synthia/blob/main/synthia-demo.png">
