@@ -71,6 +71,14 @@ Provides a Connect/Express middleware that can be used to enable CORS with vario
 npm i cors
 ```
 
+React Icons~
+
+Include popular icons in your React projects easily, utilizes ES6 imports that allows you to include only the icons that your project is using.
+
+```
+npm i react-icons --save
+```
+
 ### 🗒️Author's Note: Some of the above packages might not be available in the package.json file but you can always install them yourself separately :)
 
 <img src="https://github.com/I-Ishika-012/Synthia/blob/main/synthia-demo.png">
