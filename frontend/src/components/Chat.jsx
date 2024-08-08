@@ -2,6 +2,8 @@ import { useMutation } from '@tanstack/react-query'
 import React, { useState } from 'react'
 import axios from 'axios'
 import "./Chatbot.css"
+import { IosSend } from 'react-icons/io5'
+import {FABot} from 'react-icons/fa'
 import Synthia from "../assets/synthia.png"
 // import {getImageUrl} from '../utils'
 
