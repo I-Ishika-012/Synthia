@@ -5,6 +5,7 @@ MERN + OpenAI Chatbot
 ### Installing Default Setup/ Configurations/ Dependencies~
 
 Initializing Node Project~
+
 ```
 npm init --yes
 ```
@@ -40,12 +41,14 @@ npm i dotenv
 ```
 <br>
 Running Server~
+<br>
 
 ```
 node --watch app.js
 ```
 <br>
 Initialize Vite Project~
+<br>
 
 ```
 npm create vite@latest
