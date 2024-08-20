@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import axios from 'axios'
 import "./Chatbot.css"
 import { IosSend } from 'react-icons/io5'
-import {FABot} from 'react-icons/fa'
+import { FARobot } from 'react-icons/fa'
 import Synthia from "../assets/synthia.png"
 // import {getImageUrl} from '../utils'
 
@@ -55,21 +55,22 @@ const Chat = () => {
                 <div className="conversation">
                     {conversation.map((entry, index) => (
                         <div className={`message ${entry.role}`} key={index}>
-                            <strong>{entry.role === 'user' ? 'You: ' : 'Synthia: '}
+                            <strong>{entry.role === 'user' ? 'You: ' : <FARobot />}
                             </strong>
                             {entry.content}
                         </div>
                     ))}
                     {isTyping && (
                         <div className="message assistant">
-                            <h1>Synthia</h1>
-                            <strong>Synthia is typing...</strong>
+                            <FARobot />
+                            <strong><FARobot /></strong>
                         </div>
                     )}
                 </div>
                 <div className="input-area">
-                    <input type="text" placeholder="Enter message here" value={message} onChange={(e) => setMessage(e.target.value)} />
-                    <button onClick={handleSubmitMsg}>{mutation.isPending ? 'Loading...' : 'Send'}</button>
+                    <input type="text" placeholder="Enter message here" value={message} onChange={(e) => setMessage(e.target.value)} 
+                    onKeyPress={(e) => e.key === 'Enter' && handleSubmitMsg(e)}/>
+                    <button onClick={handleSubmitMsg}>{mutation.isPending ? 'Loading...' : <IosSend />}</button>
                 </div>
             </div>
 
