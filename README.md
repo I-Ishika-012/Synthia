@@ -53,6 +53,10 @@ Initialize Vite Project~
 ```
 npm create vite@latest
 ```
+<br>
+
+Installing Packages from JSON~
+
 ```
  npm install
 ```
