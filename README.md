@@ -1,7 +1,6 @@
 # Synthia
 MERN + OpenAI Chatbot 
 
-W.I.P.
 
 ### Installing Default Setup/ Configurations/ Dependencies~
 
@@ -39,9 +38,15 @@ Zero-dependency module that loads environment variables from a .env file into pr
 ```
 npm i dotenv
 ```
+<br>
+Running Server~
+
 ```
 node --watch app.js
 ```
+<br>
+Initialize Vite Project~
+
 ```
 npm create vite@latest
 ```
