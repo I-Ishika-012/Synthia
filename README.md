@@ -56,9 +56,16 @@ npm create vite@latest
 ```
  npm install
 ```
+<br>
+Running Vite App~
+
 ```
 npm run dev
 ```
+<br>
+
+React Query Installation~
+
 ```
 npm i @tanstack/react-query
 ```
